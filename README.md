@@ -10,7 +10,6 @@ npm install
 node watch.js
 ```
 
-
 ## FPS Settings (Press V+4)
 - 1: 125 FPS
 - 2: 250 FPS

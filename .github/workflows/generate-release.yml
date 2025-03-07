@@ -19,10 +19,12 @@ jobs:
       - name: Check for changes in src
         id: check_changes
         run: |
-          if git diff --quiet HEAD^ HEAD -- ./src; then
+          git fetch origin master
+          if git diff --quiet origin/master -- ./src; then
             echo "No changes in ./src, skipping release."
             exit 0
           fi
+          echo "Changes detected in ./src, proceeding with release."
 
       - name: Get latest version tag
         id: get_version
