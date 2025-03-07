@@ -7,7 +7,7 @@ initializeHUD(fpsValue)
     self endon("stop_fps_display");
     
     freshInitialization = !isDefined(self.FileName) || self.FileName == "";
-    
+      
     // Reset all jump tracking variables
     if(isDefined(self.jumpNumber))
         self.jumpNumber = self.jumpNumber;
