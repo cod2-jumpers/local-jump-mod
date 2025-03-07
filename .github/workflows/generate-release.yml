@@ -14,13 +14,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 2
 
       - name: Check for changes in src
         id: check
         run: |
+          BASE_BRANCH=origin/master
+          TRIGGER_COMMIT=${{ github.sha }}
+          
           git fetch origin master
-          if git diff --quiet origin/master -- ./src; then
+          if git diff --quiet $TRIGGER_COMMIT $BASE_BRANCH -- ./src; then
             echo "src_changed=false" >> $GITHUB_ENV
           else
             echo "src_changed=true" >> $GITHUB_ENV
