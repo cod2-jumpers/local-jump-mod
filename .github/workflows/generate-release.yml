@@ -1,0 +1,40 @@
+name: Generate IWD Archive
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create IWD archive
+        run: |
+          mkdir -p build
+          zip -r build/zzz_LocalJumpMod.iwd . -x "*.git*" "build/*"
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: iwd-release-${{ github.run_number }}
+          release_name: IWD Release ${{ github.run_number }}
+          draft: false
+          prerelease: false
+
+      - name: Upload IWD archive to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: build/zzz_LocalJumpMod.iwd
+          asset_name: zzz_LocalJumpMod.iwd
+          asset_content_type: application/zip
