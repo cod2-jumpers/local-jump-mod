@@ -21,10 +21,13 @@ jobs:
         run: |
           git fetch origin master
           BASE_COMMIT=$(git merge-base origin/master HEAD)
+          echo "Comparing changes between $BASE_COMMIT and HEAD"
           if git diff --quiet $BASE_COMMIT HEAD -- ./src; then
+            echo "No changes detected in ./src"
             echo "src_changed=false" >> $GITHUB_ENV
             echo "src_changed=false" >> $GITHUB_OUTPUT
           else
+            echo "Changes detected in ./src"
             echo "src_changed=true" >> $GITHUB_ENV
             echo "src_changed=true" >> $GITHUB_OUTPUT
           fi
