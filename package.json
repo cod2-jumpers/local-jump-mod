@@ -1,0 +1,22 @@
+{
+  "name": "local-jump-mod",
+  "version": "1.0.0",
+  "description": "## FPS Settings (Press V+4) - 1: 125 FPS - 2: 250 FPS - 3: 333 FPS - 4: 76 FPS - 5: 43 FPS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cod2-jumpers/local-jump-mod.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cod2-jumpers/local-jump-mod/issues"
+  },
+  "homepage": "https://github.com/cod2-jumpers/local-jump-mod#readme",
+  "dependencies": {
+    "chokidar": "^4.0.3"
+  }
+}

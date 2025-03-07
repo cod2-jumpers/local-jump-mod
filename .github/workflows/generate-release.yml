@@ -41,7 +41,7 @@ jobs:
       - name: Create IWD archive
         run: |
           mkdir -p build
-          zip -r build/archive.iwd . -x "*.git*" "build/*"
+          zip -r build/zzz_LocalJumpMod.iwd ./src -x "*.git*" "build/*"
 
       - name: Create GitHub Release
         id: create_release
@@ -60,6 +60,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: build/archive.iwd
-          asset_name: archive.iwd
+          asset_path: build/zzz_LocalJumpMod.iwd
+          asset_name: zzz_LocalJumpMod.iwd
           asset_content_type: application/zip
