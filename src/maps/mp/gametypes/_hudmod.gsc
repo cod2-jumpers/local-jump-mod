@@ -7,7 +7,7 @@ doHUDMessages()
 		self thread positionHUD();	
 		self thread monitorJumpAndLoad();
 }
-
+ 
 positionHUD()
 {
 	for(;;)
