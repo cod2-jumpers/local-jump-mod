@@ -14,23 +14,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Récupère l'historique complet pour permettre les comparaisons
+          fetch-depth: 0  # Récupère l'historique complet
 
       - name: Check for changes in src
         id: check
         run: |
-          # Récupère le dernier commit de la branche master
-          git fetch origin master
-          BASE_COMMIT=$(git merge-base origin/master HEAD)
-          echo "Comparing changes between $BASE_COMMIT and HEAD"
-
-          # Lister les fichiers modifiés dans ./src
-          changed_files=$(git diff --name-only $BASE_COMMIT HEAD -- ./src)
-          echo "Changed files in ./src:"
+          # Lister les fichiers modifiés dans le dernier commit
+          changed_files=$(git log -1 --name-only --pretty=format:)
+          echo "Changed files in the last commit:"
           echo "$changed_files"
 
-          # Vérifier si des fichiers dans ./src ont été modifiés
-          if [ -n "$changed_files" ]; then
+          # Vérifier si un fichier dans ./src a été modifié
+          if echo "$changed_files" | grep -q '^src/'; then
             echo "Changes detected in ./src"
             echo "src_changed=true" >> $GITHUB_OUTPUT
           else
