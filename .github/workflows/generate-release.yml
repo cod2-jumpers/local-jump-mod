@@ -22,7 +22,7 @@ jobs:
           git fetch origin master
           if git diff --quiet origin/master -- ./src; then
             echo "No changes in ./src, skipping release."
-            exit 0
+            exit 78
           fi
           echo "Changes detected in ./src, proceeding with release."
 
