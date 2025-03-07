@@ -23,18 +23,16 @@ jobs:
           BASE_COMMIT=$(git merge-base origin/master HEAD)
           echo "Comparing changes between $BASE_COMMIT and HEAD"
           
-          # Lister les fichiers modifiés
-          git diff --name-only $BASE_COMMIT HEAD > changed_files.txt
+          # Lister les fichiers modifiés, ajoutés ou renommés
+          git diff --name-only --diff-filter=AMR $BASE_COMMIT HEAD > changed_files.txt
           cat changed_files.txt
           
           # Vérifier si un fichier dans ./src a changé
           if grep -q '^src/' changed_files.txt; then
             echo "Changes detected in ./src"
-            echo "src_changed=true" >> $GITHUB_ENV
             echo "src_changed=true" >> $GITHUB_OUTPUT
           else
             echo "No changes detected in ./src"
-            echo "src_changed=false" >> $GITHUB_ENV
             echo "src_changed=false" >> $GITHUB_OUTPUT
           fi
 
