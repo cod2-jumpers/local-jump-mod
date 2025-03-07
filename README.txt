@@ -1,3 +1,12 @@
+Requirements : 
+- node 
+
+Watch files to generate iwd
+```bash
+npm install
+node watch.js
+```
+
 # Jumper Mod
 
 ## FPS Settings (Press V+4)
