@@ -16,6 +16,14 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Check for changes in src
+        id: check_changes
+        run: |
+          if git diff --quiet HEAD^ HEAD -- ./src; then
+            echo "No changes in ./src, skipping release."
+            exit 0
+          fi
+
       - name: Get latest version tag
         id: get_version
         run: |
