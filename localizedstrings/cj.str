@@ -1,0 +1,201 @@
+VERSION             "1"
+CONFIG              "C:\trees\cod2\bin\StringEd_PC.cfg"
+FILENOTES           ""
+
+
+
+REFERENCE			PRINT
+LANG_ENGLISH		"&&1"
+
+REFERENCE           XAXIS
+LANG_ENGLISH        "^7X-Axis"
+
+REFERENCE           YAXIS
+LANG_ENGLISH        "^7Y-Axis"
+
+REFERENCE           ZAXIS
+LANG_ENGLISH        "^7Z-Axis"
+
+REFERENCE           PITCH
+LANG_ENGLISH        "^7Pitch"
+
+REFERENCE           YAW
+LANG_ENGLISH        "^7Yaw"
+
+REFERENCE           XFAC
+LANG_ENGLISH        "^3&&1"
+
+REFERENCE           DIST
+LANG_ENGLISH        "^7Distance: ^8&&1"
+
+REFERENCE           HDIST
+LANG_ENGLISH        " ^1& ^7heightDiff: ^8 "
+
+REFERENCE           ENABLE
+LANG_ENGLISH        "^7HUD ^3enabled"
+
+REFERENCE           DISABLE
+LANG_ENGLISH        "^7HUD ^1disabled"
+
+REFERENCE           FALLDISABLE
+LANG_ENGLISH        "^7Fall Damage^1 Disabled"
+
+REFERENCE           FALLENABLE
+LANG_ENGLISH        "^7Fall Damage^3 ENABLED"
+
+REFERENCE           JTENABLE
+LANG_ENGLISH        "^7jump Timer ^3enabled"
+
+REFERENCE           JTDISABLE
+LANG_ENGLISH        "^7jumpTimer ^1disabled"
+
+REFERENCE           PREV_DISABLE
+LANG_ENGLISH        "^7Previous FPS ^1disabled"
+
+REFERENCE           ENABLE_125
+LANG_ENGLISH        "^3125 ^7FPS"
+
+REFERENCE           ENABLE_250
+LANG_ENGLISH        "^3250 ^7FPS"
+
+REFERENCE           ENABLE_333
+LANG_ENGLISH        "^3333 ^7FPS"
+
+REFERENCE           ENABLE_76
+LANG_ENGLISH        "^376 ^7FPS"
+
+REFERENCE           ENABLE_43
+LANG_ENGLISH        "^343 ^7FPS"
+
+REFERENCE           ON
+LANG_ENGLISH        "^4ON"
+
+REFERENCE           OFF
+LANG_ENGLISH        "^1OFF"
+
+REFERENCE           REDCOLOR
+LANG_ENGLISH        "^1"
+
+REFERENCE           GREENCOLOR
+LANG_ENGLISH        "^4"
+
+REFERENCE           YELLOWCOLOR
+LANG_ENGLISH        "^3"
+
+REFERENCE           BLUECOLOR
+LANG_ENGLISH        "^4"
+
+REFERENCE           CYANCOLOR
+LANG_ENGLISH        "^5"
+
+REFERENCE           PINKCOLOR
+LANG_ENGLISH        "^6"
+
+REFERENCE           WHITECOLOR
+LANG_ENGLISH        "^7"
+
+REFERENCE           ALLIESCOLOR
+LANG_ENGLISH        "^8"
+
+REFERENCE           AXISCOLOR
+LANG_ENGLISH        "^9"
+
+REFERENCE           WKEY
+LANG_ENGLISH        "^7W"
+
+REFERENCE           AKEY
+LANG_ENGLISH        "^7A"
+
+REFERENCE           SKEY
+LANG_ENGLISH        "^7S"
+
+REFERENCE           DKEY
+LANG_ENGLISH        "^7D"
+
+REFERENCE           SPACEKEY
+LANG_ENGLISH        "^7SPACE"
+
+REFERENCE           PRESTRAFE
+LANG_ENGLISH        "^7Prestrafe: ^3"
+
+REFERENCE           POSTSTRAFE
+LANG_ENGLISH        "^7Poststrafe: ^3"
+
+REFERENCE           MAXHEIGHT
+LANG_ENGLISH        "^7Max Height: ^3"
+
+REFERENCE           STARTYAW
+LANG_ENGLISH        "^7Start Yaw: ^3"
+
+REFERENCE           ENDYAW
+LANG_ENGLISH        "^7End Yaw: ^3"
+
+REFERENCE           YAWDIFF
+LANG_ENGLISH        "^7Yaw Change: ^3"
+
+REFERENCE           FIRST_POS_X
+LANG_ENGLISH        "^7Start X: ^3"
+
+REFERENCE           FIRST_POS_Y
+LANG_ENGLISH        "^7Start Y: ^3"
+
+REFERENCE           FINAL_POS_X
+LANG_ENGLISH        "^7End X: ^3"
+
+REFERENCE           FINAL_POS_Y
+LANG_ENGLISH        "^7End Y: ^3"
+
+REFERENCE           JUMP_DIST
+LANG_ENGLISH        "^7Distance: ^3"
+
+REFERENCE           POINT1_X
+LANG_ENGLISH        "^7Point 1 X: ^3"
+
+REFERENCE           POINT1_Y
+LANG_ENGLISH        "^7Point 1 Y: ^3"
+
+REFERENCE           POINT2_X
+LANG_ENGLISH        "^7Point 2 X: ^3"
+
+REFERENCE           POINT2_Y
+LANG_ENGLISH        "^7Point 2 Y: ^3" 
+
+REFERENCE            JUMP_SAVED
+LANG_ENGLISH         "Jump #%d saved to log"
+
+REFERENCE            ERROR_OPEN_FILE 
+LANG_ENGLISH         "Error: Could not open jump log file"
+
+REFERENCE           EDGE_DIST_START
+LANG_ENGLISH        "^7Edge Distance Start: ^3"
+
+REFERENCE           EDGE_DIST_END
+LANG_ENGLISH        "^7Edge Distance End: ^3"
+
+REFERENCE           EDGE_DIST_VALUES
+LANG_ENGLISH        "^7Edge Distances - Start: ^3 ^7End: ^3"
+
+REFERENCE           DOMINANT_AXIS_X
+LANG_ENGLISH        "^7Dominant Axis: ^3X"
+
+REFERENCE           DOMINANT_AXIS_Y
+LANG_ENGLISH        "^7Dominant Axis: ^3Y"
+
+REFERENCE           DIST
+LANG_ENGLISH        "^7Distance: ^3"
+
+REFERENCE           HDIST
+LANG_ENGLISH        "^7Height Diff: ^3"
+
+REFERENCE           POINT1
+LANG_ENGLISH        "^7Point 1 set"
+
+REFERENCE           POINT2
+LANG_ENGLISH        "^7Point 2 set"
+
+
+REFERENCE           TOTAL_DISTANCE
+LANG_ENGLISH        "^7Total Distance: ^3"
+
+REFERENCE  
+ENDMARKER 

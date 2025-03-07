@@ -1,0 +1,53 @@
+VERSION             "1"
+CONFIG              "C:\trees\cod2\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           PRE_JUMP_SPEED
+LANG_ENGLISH        "^2Pre^7Jump: ^2&&1"
+
+REFERENCE           POST_JUMP_SPEED
+LANG_ENGLISH        "^3Post^7Jump: ^3&&1"
+
+REFERENCE           JUMP_DISTANCE
+LANG_ENGLISH        "Jump Distance: "
+
+REFERENCE           POSITION_HLOAD
+LANG_ENGLISH        "^7Previous position ^8Loaded"
+
+REFERENCE           POSITION_SAVE
+LANG_ENGLISH        "^8Saved"
+
+REFERENCE           POSITION_LOAD
+LANG_ENGLISH        "^8Loaded"
+
+REFERENCE           NOPOSITION_LOAD
+LANG_ENGLISH        "^1There is no position to load"
+
+REFERENCE           POSITION_OLD
+LANG_ENGLISH        "^1You've reached the oldest saved position."
+
+REFERENCE           GROUND_SAVE
+LANG_ENGLISH        "^1You must be on the ground to save your position"
+
+REFERENCE           TELE1
+LANG_ENGLISH       "^2Teleported to " 
+
+REFERENCE           TELE2
+LANG_ENGLISH        "^1Player not found or name is different: "
+
+REFERENCE           TELE3
+LANG_ENGLISH        "^1No saved positions found for "
+
+REFERENCE           TELE4
+LANG_ENGLISH        "'s saved position."
+
+REFERENCE           CLIP_ON
+LANG_ENGLISH        "^7Noclip activated"
+
+REFERENCE           CLIP_OFF
+LANG_ENGLISH        "^1Noclip deactivated."
+
+REFERENCE           NADEDMG
+LANG_ENGLISH        "^7 Nade Damage : ^8"
+
+ENDMARKER

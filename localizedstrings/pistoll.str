@@ -1,0 +1,23 @@
+VERSION             "1"
+CONFIG              "C:\trees\cod2\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           TITLE
+LANG_ENGLISH        "Change Secondary Weapon"
+
+REFERENCE           COMMAND1
+LANG_ENGLISH        "1. ^4Colt .45"
+
+REFERENCE           COMMAND2
+LANG_ENGLISH        "2. ^4Luger P08"
+
+REFERENCE           COMMAND3
+LANG_ENGLISH        "3. ^4Tokarev TT30"
+
+REFERENCE           COMMAND4
+LANG_ENGLISH        "4. ^4Webley"
+
+REFERENCE           COMMAND5
+LANG_ENGLISH        "5. ^4Desert Eagle"
+
+ENDMARKER

@@ -1,0 +1,20 @@
+// ingame menu defs
+// 
+{	
+
+	loadMenu { "ui_mp/ingame.menu" }
+	loadMenu { "ui_mp/ingame_controls.menu" }
+	loadMenu { "ui_mp/ingame_options.menu" }
+	loadMenu { "ui_mp/ingame_system.menu" }
+	loadMenu { "ui_mp/ingame_callvote.menu" }
+	loadMenu { "ui_mp/ingame_leave.menu" }
+
+	loadMenu { "ui_mp/scriptmenus/ingame.menu" }
+	loadMenu { "ui_mp/wm_quickmessage.menu" }
+	loadMenu { "ui_mp/scriptmenus/quicktaunts.menu" }
+	loadMenu { "ui_mp/scriptmenus/quicktaunts2.menu" }
+	loadMenu { "ui_mp/scriptmenus/jumper.menu" }
+	loadMenu { "ui_mp/scriptmenus/jumperref.menu" }
+	loadMenu { "ui_mp/scriptmenus/settings.menu" }
+	loadMenu { "ui_mp/scriptmenus/teams.menu" }
+}

@@ -1,0 +1,21 @@
+VERSION             "1"
+CONFIG              "C:\trees\cod2\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           TITLE
+LANG_ENGLISH        "Choose Settings"
+
+REFERENCE           COMMAND1
+LANG_ENGLISH        "1. ^8jumpTimer"
+
+REFERENCE           COMMAND2
+LANG_ENGLISH        "2. ^8Position HUD"
+
+REFERENCE           COMMAND3
+LANG_ENGLISH        "3. ^8Change Secondary Weapon"
+
+REFERENCE           COMMAND4
+LANG_ENGLISH        "4. ^8Disable Falldamage"
+
+
+ENDMARKER

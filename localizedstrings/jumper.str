@@ -1,0 +1,23 @@
+VERSION             "1"
+CONFIG              "C:\trees\cod2\bin\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           TITLE
+LANG_ENGLISH        "Choose Settings"
+
+REFERENCE           COMMAND1
+LANG_ENGLISH        "1. ^8125 FPS"
+
+REFERENCE           COMMAND2
+LANG_ENGLISH        "2. ^8250 FPS"
+
+REFERENCE           COMMAND3
+LANG_ENGLISH        "3. ^8333 FPS"
+
+REFERENCE           COMMAND4
+LANG_ENGLISH        "4. ^876 FPS"
+
+REFERENCE           COMMAND5
+LANG_ENGLISH        "5. ^843 FPS"
+
+ENDMARKER
