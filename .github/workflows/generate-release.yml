@@ -3,21 +3,45 @@ name: Generate IWD Archive
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions: write-all
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Get latest version tag
+        id: get_version
+        run: |
+          latest_tag=$(git tag --sort=-v:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | head -n 1 || echo "v0.0.0")
+          IFS='.' read -r -a version_parts <<< "${latest_tag#v}"
+          major=${version_parts[0]}
+          minor=${version_parts[1]}
+          patch=${version_parts[2]}
+          
+          commit_messages=$(git log --format=%s -1)
+          
+          if echo "$commit_messages" | grep -qE "^feat"; then
+            major=$((major + 1))
+            minor=0
+            patch=0
+          elif echo "$commit_messages" | grep -qE "^fix"; then
+            patch=$((patch + 1))
+          else
+            minor=$((minor + 1))
+            patch=0
+          fi
+          
+          new_version="v${major}.${minor}.${patch}"
+          echo "new_version=$new_version" >> $GITHUB_ENV
+
       - name: Create IWD archive
         run: |
           mkdir -p build
-          zip -r build/zzz_LocalJumpMod.iwd . -x "*.git*" "build/*"
+          zip -r build/archive.iwd . -x "*.git*" "build/*"
 
       - name: Create GitHub Release
         id: create_release
@@ -25,8 +49,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: iwd-release-${{ github.run_number }}
-          release_name: IWD Release ${{ github.run_number }}
+          tag_name: ${{ env.new_version }}
+          release_name: IWD Release ${{ env.new_version }}
           draft: false
           prerelease: false
 
@@ -36,6 +60,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: build/zzz_LocalJumpMod.iwd
-          asset_name: zzz_LocalJumpMod.iwd
+          asset_path: build/archive.iwd
+          asset_name: archive.iwd
           asset_content_type: application/zip
