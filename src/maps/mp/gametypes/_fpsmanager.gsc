@@ -4,7 +4,7 @@
 
 // Sets the player's FPS value and updates related variables
 initializeFPS(fpsValue)
-{
+{ 
     // Validate FPS value is one of the supported values
     validFPS = [];
     validFPS[0] = 43;
