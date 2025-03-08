@@ -86,7 +86,7 @@ jobs:
       - name: Create IWD archive
         run: |
           mkdir -p build
-          zip -r build/zzz_LocalJumpMod.iwd ./src -x "*.git*" "build/*"
+          cd src && zip -r ../build/zzz_LocalJumpMod.iwd * -x "*.git*" "build/*" && cd ..
 
       - name: Create GitHub Release
         id: create_release
