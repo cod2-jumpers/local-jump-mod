@@ -272,7 +272,7 @@ Callback_PlayerConnect()
 	 if(!self.fpsone) 
     {
         self.fpsone = true;
-        self thread maps\mp\gametypes\_fpsHUD::initializeHUD(125);
+        self thread maps\mp\gametypes\_jumpAnalysis::initializeHUD(125);
         self iprintln(&"CJ_ENABLE_125");
     }
 	
@@ -602,11 +602,11 @@ spawnPlayer()
         }
     }
 	
-	self thread maps\mp\gametypes\_jumper_mod::_MeleeKey(); 
-	self thread maps\mp\gametypes\_jumper_mod::_UseKey(); 
+	self thread maps\mp\gametypes\_jumper_mod::_MeleeKey();
+	self thread maps\mp\gametypes\_jumper_mod::_UseKey();
 	self thread maps\mp\gametypes\_jumper_mod::_AttackAndUseKey();
 	self thread maps\mp\gametypes\_hudmod::doHUDMessages(); 
-	self thread maps\mp\gametypes\_fpsHUD::MeasureDist();
+	self thread maps\mp\gametypes\_utility::MeasureDist();
 
     self menuweapon("kar98k_sniper_mp");
 	if(!isdefined(self.pers["savedmodel"]))

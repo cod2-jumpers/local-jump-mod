@@ -736,19 +736,19 @@ jumper(response)
     switch(response)
     {
         case "1":
-            self thread maps\mp\gametypes\_fpsHUD::switchFPS(125);
+            self thread maps\mp\gametypes\_fpsManager::switchFPS(125);
             break;
         case "2":
-            self thread maps\mp\gametypes\_fpsHUD::switchFPS(250);
+            self thread maps\mp\gametypes\_fpsManager::switchFPS(250);
             break;
         case "3":
-            self thread maps\mp\gametypes\_fpsHUD::switchFPS(333);
+            self thread maps\mp\gametypes\_fpsManager::switchFPS(333);
             break;
         case "4":
-            self thread maps\mp\gametypes\_fpsHUD::switchFPS(76);
+            self thread maps\mp\gametypes\_fpsManager::switchFPS(76);
             break;
         case "5":
-            self thread maps\mp\gametypes\_fpsHUD::switchFPS(43);
+            self thread maps\mp\gametypes\_fpsManager::switchFPS(43);
             break;
     }
 }

@@ -10,6 +10,8 @@ npm install
 node watch.js
 ```
 
+# Jumper Mod
+
 ## FPS Settings (Press V+4)
 - 1: 125 FPS
 - 2: 250 FPS
@@ -39,8 +41,18 @@ node watch.js
 - Shows how far from the edge you started and landed your jump
 
 ## Jump Recording & HUD
-- After a jump, press Q to mark it as a reference jump.
-- One reference is enough, jump data is automatically saved to an HTML file in main folder 'scriptdata'.
-- Press E anytime during a recording session to reset or stop recording.
+- Set the console command "stat record" to start recording jumps.
+- Jump data is automatically saved to an HTML file in main folder 'scriptdata'.
+- Set "stat stop" to end recording session and reset reference values.
+- HTML reports now include color-coded metrics that show how close your jump was to "golden values"
+
+###  HUD Elements
+- Dynamic speed display that changes color based on acceleration/deceleration
+- WASD + Space keyboard visualization
+- jump statistics including edge distances and total jump distance
+- Position coordinates with pitch and yaw angle display
+
+## Known Issues / Missing Features
+- Edge distance calculation may be inaccurate on certain angles or when measurement points are improperly set
 
 Contact: Duck (JH Discord)

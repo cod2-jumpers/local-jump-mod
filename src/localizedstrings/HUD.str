@@ -29,24 +29,6 @@ LANG_ENGLISH        "^1You've reached the oldest saved position."
 REFERENCE           GROUND_SAVE
 LANG_ENGLISH        "^1You must be on the ground to save your position"
 
-REFERENCE           TELE1
-LANG_ENGLISH       "^2Teleported to " 
-
-REFERENCE           TELE2
-LANG_ENGLISH        "^1Player not found or name is different: "
-
-REFERENCE           TELE3
-LANG_ENGLISH        "^1No saved positions found for "
-
-REFERENCE           TELE4
-LANG_ENGLISH        "'s saved position."
-
-REFERENCE           CLIP_ON
-LANG_ENGLISH        "^7Noclip activated"
-
-REFERENCE           CLIP_OFF
-LANG_ENGLISH        "^1Noclip deactivated."
-
 REFERENCE           NADEDMG
 LANG_ENGLISH        "^7 Nade Damage : ^8"
 

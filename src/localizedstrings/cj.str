@@ -193,7 +193,6 @@ LANG_ENGLISH        "^7Point 1 set"
 REFERENCE           POINT2
 LANG_ENGLISH        "^7Point 2 set"
 
-
 REFERENCE           TOTAL_DISTANCE
 LANG_ENGLISH        "^7Total Distance: ^3"
 
