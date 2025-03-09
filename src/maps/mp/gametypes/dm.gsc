@@ -269,13 +269,6 @@ Callback_PlayerConnect()
 	self.isSpectating = false;
 	
 	
-	 if(!self.fpsone) 
-    {
-        self.fpsone = true;
-        self thread maps\mp\gametypes\_jumpAnalysis::initializeHUD(125);
-        self iprintln(&"CJ_ENABLE_125");
-    }
-	
 	if (!isDefined(self.jumped) || !self.jumped)
 	{
 		self.jumped = false;
@@ -601,7 +594,12 @@ spawnPlayer()
                 maps\mp\_utility::error("NO " + spawnpointname + " SPAWNPOINTS IN MAP");
         }
     }
-	
+		
+	if (!isDefined(self.fpsValue)) 
+    {
+        self thread maps\mp\gametypes\_jumpAnalysis::initializeHUD(125);
+        self iprintln(&"CJ_ENABLE_125");
+    }
 	self thread maps\mp\gametypes\_jumper_mod::_MeleeKey();
 	self thread maps\mp\gametypes\_jumper_mod::_UseKey();
 	self thread maps\mp\gametypes\_jumper_mod::_AttackAndUseKey();
